@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <!-- Bean definition for Espresso -->
+    <bean id="espresso" class="Espresso">
+        <property name="type" value="Espresso"/>
+        <property name="size" value="Medium"/>
+        <property name="price" value="1000"/>
+    </bean>
+
+    <!-- Bean definition for Latte -->
+    <bean id="latte" class="Latte">
+        <property name="type" value="Latte"/>
+        <property name="size" value="Medium"/>
+        <property name="price" value="1500"/>
+    </bean>
+
+    <!-- Bean definition for CoffeeShop -->
+    <bean id="coffeeshop" class="coffeeShop">
+        <property name="coffee" ref="espresso"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,104 @@
+# Cropify
+
+## Project Overview
+Cropify is an innovative digital B2B agri marketplace designed to address the challenges faced by farmers in selling their produce efficiently and profitably. It connects farmers directly with buyers, eliminating the need for middlemen and enabling fair pricing.
+
+## Features
+- Direct communication between farmers and buyers
+- Elimination of middlemen
+- Barter system for trading produce for necessary inputs like pesticides
+- Multilingual support
+- Secure transactions
+
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Getting Started
+These instructions will help you set up and run the Cropify project on your local machine for development and testing purposes.
+
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- Node.js (v14.x or higher)
+- npm (v6.x or higher)
+- MySql Workbench 
+
+## Installation
+1. **Clone the repository:**
+    ```bash
+git clone https://github.com/cropify_/Project-Name.git
+    cd cropify
+    ```
+
+2. **Install dependencies:**
+    npm install
+    ```
+
+3. **Set up environment variables:**
+    Create a `.env` file in the root directory and add the following variables:
+    ```
+    "proxy": "http://localhost:8090"
+    PORT=3000
+    ```
+
+4. **Start SpringBoot:**
+    Ensure Springboot is running on your machine.     
+	set up database link in resource .application
+	run the spring boot application as java 
+    ```
+
+## Running the Project
+1. **Start the server:**
+    ```bash
+    npm start
+    ```
+
+2. **Access the application:**
+    Open your web browser and navigate to `http://localhost:3000`
+
+## Usage
+### User Registration
+- Farmers and buyers can register by clicking on the "Sign Up" button and filling out the registration form.
+
+### Listing Produce
+- Farmers can list their produce by navigating to the "Add Produce" section and filling in the details.
+
+### Searching for Produce
+- Buyers can search for available produce using the search functionality on the homepage.
+
+### Barter System
+- Farmers can use the barter system to trade their produce for necessary inputs like pesticides. Navigate to the "Barter" section to initiate a trade.
+
+### Direct Communication
+- Farmers and buyers can communicate directly through the messaging system available on the platform.
+
+## Contributing
+Contributions are welcome! To contribute to Cropify, follow these steps:
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature-branch
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature-branch
+    ```
+5. Open a pull request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+For any questions or suggestions, please contact:
+- Your Name: [your.email@example.com](mailto:your.email@example.com)
+- Project Link: [https://github.com/yourusername/cropify](https://github.com/yourusername/cropify)

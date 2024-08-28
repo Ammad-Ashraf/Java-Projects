@@ -1,0 +1,35 @@
+● Problem: Farmers and buyers faced inefficiencies and reduced profitability due to reliance on intermediaries in agricultural transactions.
+
+● Solution: Developed a web-based platform that connects farmers directly with buyers, eliminating intermediaries to increase profitability and streamline transactions.
+
+● Workflow: RUP Software Development Lifecycle
+
+ ● Inception: Requirement Analysis
+
+- Analyzed existing systems i.e. Agrimp to gather detailed requirements.
+- Created use cases and diagrams to outline main and alternative scenarios.
+- Constructed a domain model to represent key entities and relationships in the marketplace domain.
+
+ ● Elaboration: System Design
+
+- Created SSDs for main success and major alternative scenarios.
+- Developed SDs for each event/operation in the SSDs.
+- Applied GRASP patterns for responsibility assignment with explanatory notes.
+- Designed a class diagram reflecting SD operations, using GRASP and GoF patterns for consistency.
+
+ ● Architectural Analysis: High-Level Architecture
+
+- Constructed the high-level architecture of a three-layered microservices-based for scalability, modularity and highly cohesive system.
+
+ ● Development: Implementation
+
+- Implemented a microservices architecture using Spring Boot for scalability and flexibility.
+- Designed REST APIs to integrate services.
+- Manage requests via an API Gateway for load balancing and as a security layer.
+- Utilized Spring JPA for efficient database interactions.
+- Employed Eureka Server for secure service discovery and routing, ensuring reliable interactions.
+- Applied design patterns to business logic, resulting in reusable and maintainable code.
+
+● Tech Stack
+Java | Spring Boot | REST APIs | Spring JPA | EJB
+API Gateway | Eureka Server | MySQL | React

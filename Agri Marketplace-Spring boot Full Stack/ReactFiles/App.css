@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: rgb(0, 191, 255);
+  font-size: 1.2em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.dashboard nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard nav ul li {
+  margin: 10px 0;
+}
+
+.dashboard nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.dashboard nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.app-footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 250px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon-link {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #007bff;
+}

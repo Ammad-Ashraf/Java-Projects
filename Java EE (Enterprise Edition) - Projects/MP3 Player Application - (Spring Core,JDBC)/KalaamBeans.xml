@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="mp3Player" class="Ammad.Projectname.MP3Player">
+        <constructor-arg>
+            <bean class="Ammad.Projectname.Hamd">
+                <constructor-arg value="Ballagh Ula Bi Kamalhi"/>
+                <constructor-arg value="Ali Zafar"/>
+                <constructor-arg value="720"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+
+    <bean id="driver" class="Ammad.Projectname.Driver_Task02">
+        <property name="mp3" ref="mp3Player"/>
+    </bean>
+</beans>

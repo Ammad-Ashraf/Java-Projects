@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="mainPane" prefHeight="610.0" prefWidth="702.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+
+  <MenuBar fx:id="menuBar" layoutX="10.0" layoutY="2.0" prefHeight="37.0" prefWidth="687.0" style="-fx-background-radius: 10; -fx-background-color: #F7F7FF;">
+    <menus>
+      <Menu style="-fx-background-color: #F7F7FF;" text="File">
+        <items>
+          <MenuItem id="menuNew" text="New" />
+          <MenuItem id="menuOpen" text="Open" />
+          <MenuItem id="menuSave" text="Save" />
+          <MenuItem id="menuSaveAs" text="Save As" />
+          <SeparatorMenuItem />
+          <MenuItem id="menuExit" text="Exit" />
+        </items>
+      </Menu>
+      <Menu style="-fx-background-color: #F7F7FF;" text="Edit">
+        <items>
+          <MenuItem id="menuAddBook" text="Add Book" />
+          <MenuItem id="menuEditBook" text="Edit Book" />
+          <MenuItem id="menuDeleteBook" text="Delete Book" />
+        </items>
+      </Menu>
+      <Menu style="-fx-background-color: #F7F7FF;" text="View">
+        <items>
+          <MenuItem id="menuViewAllBooks" text="View All Books" />
+          <MenuItem id="menuSearchBooks" text="Search Books" />
+        </items>
+      </Menu>
+    </menus>
+  </MenuBar>
+
+  <HBox fx:id="statusBar" alignment="CENTER_LEFT" layoutY="571.0" prefHeight="45.0" prefWidth="702.0" style="-fx-background-color: #BDD5EA;">
+    <Label prefHeight="18.0" prefWidth="191.0" text="      Ready" />
+  </HBox>
+  
+   
+   <TableView layoutX="20.0" layoutY="202.0" prefHeight="333.0" prefWidth="651.0" style="-fx-background-color: #F7F7FF;">
+     <columns>
+       <TableColumn fx:id="title" prefWidth="142.3999900817871" sortable="true" style="-fx-border-color: Black;" text="Title" />
+       <TableColumn fx:id="author" minWidth="0.0" prefWidth="156.8000030517578" style="-fx-border-color: Black;" text="Author" />
+         <TableColumn fx:id="isbn" prefWidth="118.4000244140625" style="-fx-border-color: Black;" text="ISBN" />
+         <TableColumn fx:id="status" prefWidth="228.00006103515625" style="-fx-border-color: Black;" text="Availability" />
+     </columns>
+   </TableView>
+   <TextField fx:id="titlefield" layoutX="139.0" layoutY="63.0" prefHeight="37.0" prefWidth="151.0" promptText="Title" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #BDD5EA;" />
+   <TextField fx:id="authorfield" layoutX="139.0" layoutY="130.0" prefHeight="37.0" prefWidth="151.0" promptText="Author" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #BDD5EA;" />
+   <TextField fx:id="statusfield" layoutX="372.0" layoutY="130.0" prefHeight="37.0" prefWidth="151.0" promptText="Availability" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #BDD5EA;" />
+   <TextField fx:id="isbnfield" layoutX="372.0" layoutY="63.0" prefHeight="37.0" prefWidth="151.0" promptText="ISBN" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #BDD5EA;" />
+   
+  
+
+</Pane>

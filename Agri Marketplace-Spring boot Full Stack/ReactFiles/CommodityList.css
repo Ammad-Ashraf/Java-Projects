@@ -1,0 +1,73 @@
+.commodity-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .commodity-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .commodity-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .commodity-item:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .commodity-details {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .commodity-details span {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .commodity-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button, .delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .edit-button:hover {
+    background-color: #e0a800;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
